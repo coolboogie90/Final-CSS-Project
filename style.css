@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
-/*RESET*/
+/*--RESET--*/
 
 * {
     margin: 0;
@@ -31,17 +31,54 @@ a {
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 15px;
     background: var(--Almost-White);
-    color: white;
 }
 
 /*End Reset*/
 
-/* GLOBAL CONTAINER */
+/*--GLOBAL CONTAINER--*/
 
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    background-color: var(--Almost-White);
-    padding: 0 16px;
+    padding-top: 72px;
+    padding-bottom: 129px;
+}
+
+/*--HEADER--*/
+header {
+    color: var(--Gunmetal);
+}
+
+header .container {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding? no padding? keep it for later*/
+}
+
+.logo {
+    width: 64px
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+}
+
+header ul li a {
+    color: var(--Gunmetal);
+    text-transform: capitalize;
+    /*font-size inherit from body{}*/
+    font-weight: 400;
+    line-height: 26px;
+}
+
+header ul li a:hover {
+    background-color: var(--Dark-Space-Blue);
+    color: var(--Almost-White);
+    padding: 10px;
+    border-radius: 5px;
 }
