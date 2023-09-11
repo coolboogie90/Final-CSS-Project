@@ -14,6 +14,7 @@
     --Dark-Space-Blue: #00001A;
     --Light-Vermillion: #F15D51;
     --PorscheYellow: #E9AA52;
+    --Silver: #C5C6CE;
 }
 
 img {
@@ -120,18 +121,17 @@ header ul li a:hover {
 .front-page-btn {
     display: inline-block;
     position: relative;
-    max-width: 185px;
+    width: 50%;
     height: 48px;
     background-color: var(--Light-Vermillion);
     margin-top: 29px;
-}
-
-.front-page-btn a {
+    text-align: center;
     text-transform: uppercase;
     color: var(--Almost-White);
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 4.375px;
+    padding: 12px 0;
 }
 
 .news {
@@ -146,7 +146,7 @@ header ul li a:hover {
     font-weight: 700;
     line-height: 40px;
     margin-bottom: 72px;
-    ;
+
 }
 
 .news-title {
@@ -169,6 +169,51 @@ header ul li a:hover {
     width: 100%;
     height: 1px;
     background-color: #5E607A;
-    ;
     margin: 29px 0;
+}
+
+/*SECTION TRENDING*/
+.trending .container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.articles {
+    border: 1px solid var(--Dark-Space-Blue);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    margin: 0;
+}
+
+.articles-title {
+    color: var(--Dark-Space-Blue);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+
+.articles-text {
+    flex: 1 1 auto; /* Allow the text to expand and fill the remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.articles-text p {
+    margin-top: 10px; /* Add some space between the title and the paragraph */
+}
+
+
+.articles-text .trending-number {
+    color: var(--Silver);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.articles img {
+    height: 100%;
+    object-fit: cover;
 }
