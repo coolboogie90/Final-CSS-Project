@@ -36,8 +36,6 @@ body {
     background: var(--Almost-White);
 }
 
-/*End Reset*/
-
 /*--GLOBAL CONTAINER--*/
 
 .container {
@@ -213,6 +211,11 @@ header ul li a:hover {
     font-weight: 700;
     line-height: 32px;
 }
+
+.articles-img {
+    height: 150px; /* Set a fixed height for the image container */
+}
+
 .articles img {
     height: 100%;
     object-fit: cover;
