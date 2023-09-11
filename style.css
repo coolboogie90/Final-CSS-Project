@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Almost-White: #FFFDFA;
+    --Gunmetal: #5E607A;
+    --Dark-Space-Blue: #00001A;
+    --Light-Vermillion: #F15D51;
+    --PorscheYellow: #E9AA52;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--Almost-White);
+    color: white;
+}
+
+/*End Reset*/
+
+/* GLOBAL CONTAINER */
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    background-color: var(--Almost-White);
+    padding: 0 16px;
+}
