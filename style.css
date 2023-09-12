@@ -41,7 +41,6 @@ body {
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 72px 0;
 }
 
 /*--HEADER--*/
@@ -54,6 +53,8 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 72px;
+    margin-bottom: 72px;
 }
 
 .logo {
@@ -88,6 +89,7 @@ main .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    margin-bottom: 72px;
 }
 
 .main-content-left {
@@ -142,6 +144,11 @@ main .container {
     line-height: 24px;
     letter-spacing: 4.375px;
     padding: 12px 35px;
+    transition: 0.2s;
+}
+
+.left-btn:hover {
+    transform: scale(1.1);
 }
 
 .main-content-right {
@@ -169,6 +176,7 @@ main .container {
 
 .right-item p {
     color: var(--Almost-White);
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
@@ -185,20 +193,22 @@ main .container {
 
 /*SECTION TRENDING*/
 .trending .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 0 auto;
+    margin-bottom: 129px;
 }
 
 .articles {
-    border: 1px solid var(--Dark-Space-Blue);
+    /* border: 1px solid var(--Dark-Space-Blue); */
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-top: 0;
     padding: 0;
     gap: 20px;
+    max-height: 124px;
 }
 
 .articles-title {
@@ -214,6 +224,7 @@ main .container {
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
+    margin-bottom: 12px;
 }
 
 .articles-text h4 {
@@ -221,19 +232,23 @@ main .container {
     font-size: 18px;
     font-weight: 800;
     line-height: 24px;
+    margin-bottom: 12px;
 }
 
 .articles-text p {
-    margin-top: 10px;
+    color: var(--Gunmetal);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
-.articles img {
-    height: 150px;
+.articles-img img {
+    height: 124px;
     width: 100px;
     object-fit: cover;
 }
 
 /*MEDIA QUERIES*/
-@media (min-width: 375px){
+@media (min-width: 320px){
     /*change container into display: flex and flex direction: column*/
 }
