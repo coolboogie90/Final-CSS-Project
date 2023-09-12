@@ -58,15 +58,15 @@ header .container {
 }
 
 .logo {
-    width: 64px
+    width: 64px;
 }
 
-header ul {
+nav ul {
     display: flex;
     gap: 40px;
 }
 
-header ul li a {
+nav ul li a {
     color: var(--Gunmetal);
     text-transform: capitalize;
     /*font-size inherit from body{}*/
@@ -74,11 +74,21 @@ header ul li a {
     line-height: 26px;
 }
 
-header ul li a:hover {
+nav ul li a:hover {
     background-color: var(--Dark-Space-Blue);
     color: var(--Almost-White);
     padding: 10px;
     border-radius: 5px;
+}
+
+.sidebar{
+    position: absolute;
+    right: 10px;
+    top: 95px;
+}
+.sidebar-burger {
+    width: 40px;
+    height: 100%;
 }
 
 /*--MAIN--*/
@@ -244,11 +254,47 @@ main .container {
 
 .articles-img img {
     height: 124px;
-    width: 100px;
+    width: 100%;
     object-fit: cover;
 }
 
 /*MEDIA QUERIES*/
-@media (min-width: 320px){
-    /*change container into display: flex and flex direction: column*/
+@media (max-width: 768px) {
+    header .container {
+        padding: 0 16px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+        padding: 10px;
+    }
+
+    .main-content-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending .container {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .articles{
+        grid-template-columns: 0.75fr 2.25fr;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .sidebar-burger {
+        display: none;
+    }
 }
